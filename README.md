@@ -22,6 +22,8 @@ No back-and-forth. No "can you also add...". No debugging prompt misunderstandin
 
 One PRD. One agent session. One fully working application.
 
+This repo also includes the **skills and methodology** we use to produce PRDs at this bar - so you can write your own.
+
 ## Available PRDs
 
 | PRD | Description | Lines | Tech Stack |
@@ -29,6 +31,16 @@ One PRD. One agent session. One fully working application.
 | [Lightweight CRM](prds/lightweight-crm.md) | Full-featured CRM with contacts, companies, deals pipeline, activities, email integration, dashboards, and role-based access control | 10,000+ | React · Node.js · PostgreSQL · Tailwind CSS |
 
 > More PRDs coming soon - task management, company knowledge base, and more.
+
+## Available Skills
+
+Skills are reusable methodologies that AI agents can follow to produce work at a consistent bar. They're how we make PRDs like the ones above.
+
+| Skill | Description |
+|-------|-------------|
+| [PRD Builder](skills/prd-builder/SKILL.md) | The complete methodology for producing AI-agent-executable PRDs - seven phases, dual review, three drafts, environment-agnostic |
+
+Hand a skill to your agent (paste its contents, or load it as a skill in your platform) and the agent will follow the methodology to produce a PRD at the same bar as the ones in this repo.
 
 ## How To Use
 
@@ -95,12 +107,21 @@ One person orchestrating a team of CRHQ agents outperforms a department 10x its 
 
 ## Contributing
 
-Have a PRD that meets the bar? We welcome contributions. Requirements:
+We welcome contributions of both PRDs and skills.
+
+**For PRDs** (`prds/`):
 
 - **5,000+ lines minimum** - we're not interested in toy specs
 - **Fully executable** - an AI agent should be able to build the entire application from your PRD alone
 - **Battle-tested** - the PRD must have been used to successfully generate a working application at least once
 - **Self-contained** - no external docs, no "see also", no assumptions
+
+**For skills** (`skills/`):
+
+- **Tech-stack agnostic** - the methodology should work across stacks and project types
+- **Battle-tested** - the skill must have been used by an agent to produce a real artifact at least once
+- **Self-contained** - no environment-specific assumptions; reference the host's facilities generically
+- **Folder per skill** - `skills/<skill-name>/SKILL.md` plus any supporting scripts, templates, or examples
 
 Open a PR and we'll review it.
 

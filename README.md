@@ -39,6 +39,7 @@ Skills are reusable methodologies that AI agents can follow to produce work at a
 | Skill | Description |
 |-------|-------------|
 | [PRD Builder](skills/prd-builder/SKILL.md) | The complete methodology for producing AI-agent-executable PRDs - seven phases, dual review, three drafts, environment-agnostic |
+| [Code Refactor](skills/code-refactor/SKILL.md) | Two-mode refactoring methodology - AUDIT (rank refactor opportunities by impact) and PLAN (deep-dive specs with full pre/post verifiability loops and HTML artifact) |
 
 Hand a skill to your agent (paste its contents, or load it as a skill in your platform) and the agent will follow the methodology to produce a PRD at the same bar as the ones in this repo.
 
